@@ -34,6 +34,12 @@ namespace ShapeWorld.Domain.Models
       return 0;
     }
 
+    public override string ToString()
+    {
+      //return $"{NumberOfEdges}"; //notifies that something needs to be evaluated into a string
+      return $"{this.GetType().Name} {NumberOfEdges} edges"; //reflection: allows connection to object underneath runtime engine to get properties at runtime
+    }
+
     //controllers
     public Shape(int edges)
     {

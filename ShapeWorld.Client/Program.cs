@@ -18,6 +18,8 @@ namespace ShapeWorld.Client
           someSphere.Radius = 10;
           Console.Write(someSphere.Area());
 
+          Shape someCube = new Cube();
+
           //Rectangle someRect = new Rectangle() as Shape; //shape cannot be real
           Rectangle someRect = new Rectangle() as Square; // casting to square, returns null if cant be cast
           //Rectangle someRect2 = (Square) new Rectangle(); // throws an exception if cant cast
